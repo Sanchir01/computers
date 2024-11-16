@@ -1,0 +1,16 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    &::after {
+    content: '';
+    position: absolute;
+    left: 0;  
+    width: 100%;
+    height:5px;  // Высота линии
+    background: url("../images/svg/Group 22582.svg");
+    }
+}
+
