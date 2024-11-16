@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import Logo from "~/shared/images/Logo";
-import LogoBox from "~/shared/images/boxtlogo";
-import UserIcon from "~/shared/images/userIcon";
+import Logo from "~/public/images/Logo";
+import LogoBox from "~/public/images/boxtlogo";
+import UserIcon from "~/public/images/userIcon";
 import styles from "~/shared/styles/Headers.module.scss";
 import { Button } from "~/shared/ui/button";
+
 const Header = () => {
 	return (
 		<header className={`${styles.header} text-white bg-black`}>

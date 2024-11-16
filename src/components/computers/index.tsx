@@ -1,4 +1,4 @@
-import ComputersLogo from "~/shared/images/computers";
+import ComputersLogo from "~/public/images/computers";
 import styles from "~/shared/styles/computers.module.scss";
 
 const Computers = () => {

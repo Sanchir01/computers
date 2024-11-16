@@ -3,13 +3,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Button } from "~/shared/ui/button";
 import "swiper/css";
 import { useState } from "react";
-import SliderActivePagination from "~/shared/images/slider/sliderActivePagination";
-import SliderDisabledPagination from "~/shared/images/slider/sliderDisabledPagination";
-import SmileIcon from "~/shared/images/smile";
+import SliderActivePagination from "~/public/images/slider/sliderActivePagination";
+import SliderDisabledPagination from "~/public/images/slider/sliderDisabledPagination";
+import SmileIcon from "~/public/images/smile";
 import styles from "~/shared/styles/hero.module.scss";
+
+const testImage = new URL(
+	"../../public/images/slider/test.svg",
+	import.meta.url,
+).href;
+
 const HeroBlock = () => {
 	const [slideIndex, setSlideIndex] = useState(0);
-
 	const length = 3;
 	return (
 		<div className={styles.hero}>
@@ -71,23 +76,13 @@ const HeroBlock = () => {
 						onSlideChange={(swiper) => setSlideIndex(swiper.activeIndex)}
 					>
 						<SwiperSlide>
-							<img
-								src={"src/shared/images/slider/test.svg"}
-								alt={`computer ${slideIndex}`}
-							/>
+							<img src={testImage} alt={`computer ${slideIndex}`} />
 						</SwiperSlide>
 						<SwiperSlide>
-							<img
-								src={"src/shared/images/slider/comp2.webp"}
-								alt={`computer ${slideIndex}`}
-							/>
+							<img src={testImage} alt={`computer ${slideIndex}`} />
 						</SwiperSlide>
-
 						<SwiperSlide>
-							<img
-								src={"src/shared/images/slider/test.svg"}
-								alt={`computer ${slideIndex}`}
-							/>
+							<img src={testImage} alt={`computer ${slideIndex}`} />
 						</SwiperSlide>
 					</Swiper>
 				</div>

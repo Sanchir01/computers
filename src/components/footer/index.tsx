@@ -1,8 +1,8 @@
-import Logo from "~/shared/images/Logo";
-import FacebookIcon from "~/shared/images/social/facebook";
-import InstIcon from "~/shared/images/social/inst";
-import TwitterIcon from "~/shared/images/social/twitter";
-import VKIcon from "~/shared/images/social/vk";
+import Logo from "~/public/images/Logo";
+import FacebookIcon from "~/public/images/social/facebook";
+import InstIcon from "~/public/images/social/inst";
+import TwitterIcon from "~/public/images/social/twitter";
+import VKIcon from "~/public/images/social/vk";
 
 const Footer = () => {
 	return (
