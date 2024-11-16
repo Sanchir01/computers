@@ -18,8 +18,8 @@ const HeroBlock = () => {
 	const length = 3;
 	return (
 		<div className={styles.hero}>
-			<div className="container">
-				<div className="flex gap-10">
+			<div className="ml-[334px] px-[15px]">
+				<div className="flex gap-5">
 					<div className={styles.hero__left}>
 						<h1 className={`${styles.hero__title} relative`}>
 							Best&nbsp;Computers
@@ -38,7 +38,7 @@ const HeroBlock = () => {
 							<Button
 								type="button"
 								title="Купить компьютер"
-								className="w-full"
+								className="w-full text-2xl"
 							/>
 						</div>
 						<div className="flex gap-4 mt-12">
